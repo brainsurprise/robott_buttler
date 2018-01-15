@@ -1,0 +1,20 @@
+{
+  "name": "mysqltest",
+  "description": "It does things",
+  "region": "us-west-2",
+  "runtime": "python2.7",
+  "handler": "mysql_test.lambda_handler",
+  "role": "arn:aws:iam::489232673781:role/lambda-vpc-execution-role",
+  "timeout": 30,
+  "memory": 512,
+  "ignore": [
+    "circle\\.yml$",
+    "\\.git$",
+    "lib/",
+    "bin/",
+    "include/",
+    ".git/",
+    ".Python",
+    "/.*\\.pyc$"
+  ]
+}
