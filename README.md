@@ -9,3 +9,10 @@ Yes, that's spelled right.
 5. `cp lambda.json.example lambda.json`
 6. Get the secrets from the aws console or somone and enter them in lambda.json
 7. Make sure your AWS command line is configured and you are in the correct profile
+
+## Upload the latest function
+From the directory:
+`lambda-uploader --profile=brainsurprise ./`
+
+## Run the lambda
+`bash run_lambda.sh`
