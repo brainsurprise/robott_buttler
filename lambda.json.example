@@ -7,6 +7,16 @@
   "role": "arn:aws:iam::489232673781:role/lambda-vpc-execution-role",
   "timeout": 30,
   "memory": 512,
+  "vpc": {
+    "subnets": [
+      "subnet-a98092cf",
+      "subnet-50f8c518",
+      "subnet-cf36fb95"
+    ],
+    "security_groups": [
+      "sg-f257568e"
+    ]
+  },
   "ignore": [
     "circle\\.yml$",
     "\\.git$",
@@ -16,5 +26,11 @@
     ".git/",
     ".Python",
     "/.*\\.pyc$"
-  ]
+  ],
+  "variables": {
+    "DB_ENDPOINT": <SECRET>,
+    "DB_USERNAME": <SECRET>,
+    "DB_PASSWORD": <SECRET>,
+    "DB_NAME": <SECRET>
+  }
 }
